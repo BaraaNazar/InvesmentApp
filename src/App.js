@@ -36,7 +36,7 @@ function App() {
       <InvestmentHeader />
 
       <InvestmentForm onClaculate={calculateHandler} />
-      {!userInput && <p>Please enter your data</p>}
+      {!userInput && <p className='resultsMsg'>Please enter your data!</p>}
       {userInput && (
         <InvestmentResults
           data={yearlyData}
